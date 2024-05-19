@@ -41,5 +41,11 @@ public class ApplePicker : MonoBehaviour
             SceneManager.LoadScene("Scene_0");
         }
     }
-    
+    public void Update()
+    {
+        if (Input.GetKey("escape")) 
+        {
+            SceneManager.LoadScene("StartScene");
+        }
+    }
 }
